@@ -3,6 +3,9 @@
   "version": "1.0.1",
   "description": "HTTP client for API testing and fake data generator",
   "main": "./dist/cjs/index.js",
+  "repository": {
+    "url": "https://github.com/alexandermontillarivera/coverty"
+  },
   "types": "./coverty.d.ts",
   "scripts": {
     "dev": "ts-node-dev src/index.ts",
