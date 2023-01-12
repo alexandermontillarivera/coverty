@@ -1,0 +1,32 @@
+{
+  "name": "coverty",
+  "version": "1.0.1",
+  "description": "HTTP client for API testing and fake data generator",
+  "main": "./dist/cjs/index.js",
+  "types": "./coverty.d.ts",
+  "scripts": {
+    "dev": "ts-node-dev src/index.ts",
+    "prepare": "npm run build",
+    "build": "tsc --project tsconfig.esm.json & tsc --module commonjs --project tsconfig.cjs.json"
+  },
+  "keywords": ["Testing", "http", "fake-data", "client-http", "Client http", "Nodejs Rest Testing"],
+  "author": "Alexander Montilla Rivera",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "eslint": "^8.31.0",
+    "eslint-config-standard-with-typescript": "^26.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.4",
+    "vitest": "^0.27.1"
+  },
+  "exports": {
+    "default": "./dist/cjs/index.js",
+    "import": "./dist/esm/index.js",
+    "require": "./dist/cjs/index.js"
+  }
+}
