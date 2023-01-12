@@ -7,7 +7,7 @@ It's time for testing, and to check your endpoint status with the help of your f
 Installation in your project 📁
 
 ```console
-npm install coverty
+npm install -D coverty
 ```
 
 ## Usage 🎯
@@ -130,8 +130,8 @@ console.log(data)
 4. Response.information.**timeFetching**: server response time in milliseconds.
 5. Response.information.**timeTranformationJson**: time to transform the JSON.
 6. Response.information.**url**: url where the request was directed.
-7. Response.information.**sentHeaders**: headers sent to server
-8. Response.information.**sentBody**: body sent to server
-9. Response.information.**sentQuerys**: query sent to server
+7. Response.information.**sentHeaders**: headers sent to server.
+8. Response.information.**sentBody**: body sent to server.
+9. Response.information.**sentQuerys**: query sent to server.
 
 Thanks to **typescript** you will be able to have autocompletion in visual studio code and other popular IDEs, so you can easily extract the api responses and some performance information. Just like **typescript** helps with module methods for easy use.

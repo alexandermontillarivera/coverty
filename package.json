@@ -1,6 +1,6 @@
 {
   "name": "coverty",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "HTTP client for API testing and fake data generator",
   "main": "./dist/cjs/index.js",
   "repository": {
