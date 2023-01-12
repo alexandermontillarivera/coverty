@@ -1,8 +1,8 @@
 import client from './client'
-import Options from '../types/Options'
-import Config from '../types/Config'
-import Methods from '../types/Methods'
-import Response from '../types/Response'
+import Options from '../../types/Options'
+import Config from '../../types/Config'
+import Methods from '../../types/Methods'
+import Response from '../../types/Response'
 
 const setup = (config: Config): Methods => {
   return {

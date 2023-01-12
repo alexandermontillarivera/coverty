@@ -1,8 +1,7 @@
-import Client from '../types/Client'
-import Response from '../types/Response'
+import Client from '../../types/Client'
+import Response from '../../types/Response'
 
 const client = async (init: Client): Promise<Response> => {
-  console.log()
   const url: string = Object.entries({ ...init.query }).length !== 0
     ? init.url + '?' + new URLSearchParams({ ...init.query }).toString()
     : init.url

@@ -3,3 +3,7 @@ test
 .gitignore
 .eslintrc.json
 src
+tsconfig.base.json
+tsconfig.cjs.json
+tsconfig.esm.json
+tsconfig.json

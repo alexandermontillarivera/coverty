@@ -1,7 +1,7 @@
 import client from './client'
-import Response from '../types/Response'
-import Methods from '../types/Methods'
-import Options from '../types/Options'
+import Response from '../../types/Response'
+import Methods from '../../types/Methods'
+import Options from '../../types/Options'
 
 const methods: Methods = {
   get: async (url: string, options?: Partial<Options>): Promise<Response> => {
