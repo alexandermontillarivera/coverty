@@ -22,3 +22,4 @@ const methods: Methods = {
 }
 
 export default methods
+module.exports.default = methods

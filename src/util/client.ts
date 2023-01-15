@@ -43,3 +43,4 @@ const client = async (init: Client): Promise<Response> => {
 }
 
 export default client
+module.exports.default = client

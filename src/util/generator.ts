@@ -90,3 +90,4 @@ const generator: Generator = {
 }
 
 export default generator
+module.exports.default = generator

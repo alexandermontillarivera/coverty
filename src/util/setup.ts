@@ -55,3 +55,4 @@ const setup = (config: Config): Methods => {
 }
 
 export default setup
+module.exports.default = setup

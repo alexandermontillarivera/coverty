@@ -1,4 +1,5 @@
-import Lib from './types/Lib'
+import Lib from './Lib'
 
 declare const coverty: Lib
+
 export default coverty

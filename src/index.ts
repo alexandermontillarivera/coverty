@@ -1,12 +1,12 @@
 import methods from './util/request'
 import setup from './util/setup'
 import generator from './util/generator'
-import Lib from '../types/Lib'
 
-const lib: Lib = {
+export const lib = {
   ...methods,
   setup,
   generator
 }
-
+module.exports = lib
+module.exports.default = lib
 export default lib

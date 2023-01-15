@@ -1,12 +1,12 @@
 {
   "name": "coverty",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "HTTP client for API testing and fake data generator",
-  "main": "./dist/cjs/index.js",
+  "main": "./dist/cjs/src/index.js",
   "repository": {
     "url": "https://github.com/alexandermontillarivera/coverty"
   },
-  "types": "./coverty.d.ts",
+  "types": "./types/index.d.ts",
   "scripts": {
     "dev": "ts-node-dev src/index.ts",
     "prepare": "npm run build",
@@ -28,8 +28,8 @@
     "vitest": "^0.27.1"
   },
   "exports": {
-    "default": "./dist/cjs/index.js",
-    "import": "./dist/esm/index.js",
-    "require": "./dist/cjs/index.js"
+    "default": "./dist/cjs/src/index.js",
+    "import": "./dist/esm/src/index.js",
+    "require": "./dist/cjs/src/index.js"
   }
 }
