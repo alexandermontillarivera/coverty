@@ -23,4 +23,5 @@ export interface Generator {
   getText: (options?: Partial<Text>) => string
   getTimestamp: () => string
   getTimeZone: () => string
+  getMongodbId: () => string
 }

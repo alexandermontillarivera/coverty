@@ -14,6 +14,7 @@ import { numbers } from '../data/number.json'
 import { passwords } from '../data/password.json'
 import { texts } from '../data/text.json'
 import { timestamps } from '../data/timestamp.json'
+import { mongodbId } from '../data/mongodb.json'
 import { timezones } from '../data/timezone.json'
 import { Text, Generator } from '../../types/Generator'
 
@@ -86,6 +87,9 @@ const generator: Generator = {
   },
   getTimeZone: (): string => {
     return getRandomFromArray(timezones) as string
+  },
+  getMongodbId: (): string => {
+    return getRandomFromArray(mongodbId) as string
   }
 }
 

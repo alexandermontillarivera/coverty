@@ -4,7 +4,7 @@ interface Options {
   query: object
 }
 
-export interface Headers {
+interface Headers {
   Authorization: string
   Pragma: string
   Warning: string
@@ -23,7 +23,7 @@ export interface Headers {
   'Sec-WebSocket-Key': string
 }
 
-export interface Text {
+interface Text {
   max: number
 }
 
@@ -34,7 +34,7 @@ interface Config {
   globalQuerys?: object
 }
 
-export interface Generator {
+interface Generator {
   getAnimal: () => string
   getImageFromBase64: () => string
   getBoolean: () => boolean
@@ -55,6 +55,7 @@ export interface Generator {
   getText: (options?: Partial<Text>) => string
   getTimestamp: () => string
   getTimeZone: () => string
+  getMongodbId: () => string
 }
 
 interface Methods {
@@ -81,7 +82,7 @@ interface Information {
   sentQuerys: object
 }
 
-declare const coverty: {
+interface Coverty {
   setup: (config: Config) => Methods
   generator: Generator
   get: (url: string, options?: Partial<Options>) => Promise<Response>
@@ -91,4 +92,4 @@ declare const coverty: {
   patch: (url: string, options?: Partial<Options>) => Promise<Response>
 }
 
-export default coverty
+export default Coverty
