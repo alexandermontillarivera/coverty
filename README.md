@@ -87,6 +87,7 @@ The fake data generator has all its methods named intuitively for use. You can g
 - Text **(optional max param object value from method)**
 - Timestamp
 - Timezone
+- MongodbId
 
 ```javascript
 // ES MODULES

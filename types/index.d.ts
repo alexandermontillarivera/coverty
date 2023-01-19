@@ -1,10 +1,10 @@
-interface Options {
+export interface Options {
   body: object
   headers: Partial<Headers> | object
   query: object
 }
 
-interface Headers {
+export interface Headers {
   Authorization: string
   Pragma: string
   Warning: string
@@ -27,14 +27,14 @@ interface Text {
   max: number
 }
 
-interface Config {
+export interface Config {
   baseUrl: string
   globalHeaders?: Partial<Headers> | object
   globalBody?: object
   globalQuerys?: object
 }
 
-interface Generator {
+export interface Generator {
   getAnimal: () => string
   getImageFromBase64: () => string
   getBoolean: () => boolean
@@ -66,7 +66,7 @@ interface Methods {
   patch: (url: string, options?: Partial<Options>) => Promise<Response>
 }
 
-interface Response {
+export interface Response {
   status: number
   headers: any
   data: any
@@ -82,7 +82,7 @@ interface Information {
   sentQuerys: object
 }
 
-interface Coverty {
+export interface Coverty {
   setup: (config: Config) => Methods
   generator: Generator
   get: (url: string, options?: Partial<Options>) => Promise<Response>
@@ -92,4 +92,13 @@ interface Coverty {
   patch: (url: string, options?: Partial<Options>) => Promise<Response>
 }
 
-export default Coverty
+declare const coverty: Coverty
+declare const generator: Generator
+declare const setup: (config: Config) => Methods
+
+export {
+  generator,
+  setup
+}
+
+export default coverty
